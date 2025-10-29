@@ -6,31 +6,52 @@ import re, json, pandas as pd, os, random, time
 from io import BytesIO
 import base64
 
-# ====== Cấu hình cơ bản (GIỮ NGUYÊN) ======
+# === THÊM PAGE CONFIG ĐỂ TỐI ƯU HIỂN THỊ ===
+st.set_page_config(layout="wide", page_title="MyHoaQuiz", initial_sidebar_state="expanded") 
+# ==========================================
+
+# ====== Cấu hình cơ bản ======
 QUIZ_FILE = "questions.json"
 SCORES_FILE = "scores.xlsx"
 ADMIN_PASSWORD = "admin123"
 EXPECTED_COLUMNS = ["Tên Học Sinh", "Lớp", "Điểm", "Tổng Số Câu", "Thời Gian Nộp Bài"]
 DEFAULT_TIME_LIMIT = 45
+LOGO_PATH = "LOGO.png" # Khai báo đường dẫn logo
 
-st.markdown(
-    """
-    <h2 style='text-align: center; font-weight: 800;'>
-        📝 TRẮC NGHIỆM – TIN HỌC 8
-    </h2>
-    <h4 style='text-align: center; color: gray; font-weight: 700;'>
-        KIẾN THỨC TRỌNG TÂM GIỮA HỌC KÌ 1 NĂM HỌC 2025–2026
-    </h4>
-    """,
-    unsafe_allow_html=True
-)
-# ====== Khởi tạo file bảng điểm (GIỮ NGUYÊN) ======
+# Thêm logo và tiêu đề (KHU VỰC CHÍNH)
+# SỬA ĐỔI: Thay đổi tỉ lệ cột [5, 4, 1] để căn giữa nội dung ở col2
+col1, col2, col3 = st.columns([5, 4, 1])
+
+# Hiển thị Logo ở cột 3
+if os.path.exists(LOGO_PATH):
+    with col3:
+        # Logo được đặt ở cột 3
+        st.image(LOGO_PATH, width=100) 
+    
+# Tiêu đề ở cột 2
+with col2:
+    st.markdown(
+        """
+        <h1   style='text-align: center; font-weight: 800;'>   
+                    MyHoaQuiz
+        </h1>
+        <h2 style='text-align: center; font-weight: 800;'>    
+            📝TRẮC NGHIỆM – TIN HỌC 8
+        </h2>
+        <h5 style='text-align: center; color: gray; font-weight: 700; margin-top: -10px;'> 
+    KIẾN THỨC TRỌNG TÂM GIỮA HỌC KÌ 1 NĂM HỌC 2025–2026
+        </h5>
+        """,
+        unsafe_allow_html=True
+    )
+    
+# ====== Khởi tạo file bảng điểm ======
 def init_scores_file():
     if not os.path.exists(SCORES_FILE):
         pd.DataFrame(columns=EXPECTED_COLUMNS).to_excel(SCORES_FILE, index=False)
 init_scores_file()
 
-# ====== Các hàm tiện ích (GIỮ NGUYÊN load_quiz, load_quiz_from_word, save_quiz, get_shuffled_quiz) ======
+# ====== Các hàm tiện ích ======
 def load_quiz():
     if os.path.exists(QUIZ_FILE):
         with open(QUIZ_FILE, "r", encoding="utf-8") as f:
@@ -72,7 +93,7 @@ def get_shuffled_quiz(qz):
     return qz
 
 # =========================================================================
-# Hàm student_ui() đã CẬP NHẬT để bắt học sinh nhấn nút Bắt đầu
+# Hàm student_ui() 
 # =========================================================================
 def student_ui():
     st.header("📚 Khu vực Thi Trắc Nghiệm")
@@ -314,7 +335,7 @@ def student_ui():
         return 
         
 # =========================================================================
-# ====== Giao diện Giáo viên (ĐÃ CHỈNH SỬA) ======
+# ====== Giao diện Giáo viên ======
 # =========================================================================
 def admin_ui():
     
@@ -337,7 +358,7 @@ def admin_ui():
     if not st.session_state.get("admin_logged_in", False):
         if 'uploaded_quiz_data' in st.session_state: del st.session_state.uploaded_quiz_data
         
-    # (Đăng nhập/Đăng xuất giữ nguyên)
+    # (Đăng nhập/Đăng xuất)
     if not st.session_state.get("admin_logged_in", False):
         st.info("🔐 Đăng nhập để truy cập khu vực Giáo viên")
         pwd = st.text_input("Nhập mật khẩu:", type="password")
@@ -367,7 +388,7 @@ def admin_ui():
     st.subheader("2️⃣ Tải Đề Thi (Word)")
     up = st.file_uploader("📄 Chọn file .docx", type=["docx"])
     
-    # Logic xử lý file Word (Giữ nguyên logic chính)
+    # Logic xử lý file Word 
     if up:
         try:
             q = load_quiz_from_word(up)
@@ -384,7 +405,7 @@ def admin_ui():
             
     
     # --------------------------------------------------------
-    # CHỨC NĂNG CHỈNH SỬA ĐỀ THI VỚI ẢNH (GIỮ NGUYÊN)
+    # CHỨC NĂNG CHỈNH SỬA ĐỀ THI VỚI ẢNH 
     # --------------------------------------------------------
     if 'uploaded_quiz_data' in st.session_state and st.session_state.uploaded_quiz_data:
         quiz_data = st.session_state.uploaded_quiz_data
@@ -490,7 +511,7 @@ def admin_ui():
                 st.error("⚠️ **Lỗi:** Có câu hỏi không hợp lệ (thiếu nội dung, thiếu lựa chọn, hoặc đáp án không khớp). Vui lòng kiểm tra lại.")
 
     # --------------------------------------------------------
-    # KHU VỰC BẢNG ĐIỂM (4) - ĐÃ CHỈNH SỬA XỬ LÝ LỖI
+    # KHU VỰC BẢNG ĐIỂM (4) 
     # --------------------------------------------------------
     st.subheader("4️⃣ Xem & Tải Bảng Điểm")
     
@@ -546,12 +567,14 @@ def admin_ui():
         if st.button("❌ Vâng, XÓA BẢNG ĐIỂM VĨNH VIỄN", type="secondary"):
             delete_scores_file()
             
-# ====== Điều hướng chính (GIỮ NGUYÊN) ======
+# ====== Điều hướng chính (ĐÃ XÓA LOGO TRONG SIDEBAR) ======
 def main():
     if "mode" not in st.session_state:
         st.session_state.mode = "student"
         
     with st.sidebar:
+        # Logo trong sidebar đã được xóa theo yêu cầu
+            
         st.sidebar.markdown(
     """
     <h3 style='text-align: center; color: #444; font-weight: 800;'>
