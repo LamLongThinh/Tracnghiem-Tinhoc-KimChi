@@ -36,22 +36,22 @@ with col2:
                     MyHoaQuiz
         </h1>
         <h2 style='text-align: center; font-weight: 800;'>    
-            📝TRẮC NGHIỆM – TIN HỌC 8
+            📝TRẮC NGHIỆM – TIN HỌC 7
         </h2>
-        <h5 style='text-align: center; color: gray; font-weight: 700; margin-top: -10px;'> 
+        <h6 style='text-align: center; color: gray; font-weight: 700; margin-top: -10px;'> 
     KIẾN THỨC TRỌNG TÂM GIỮA HỌC KÌ 1 NĂM HỌC 2025–2026
-        </h5>
+        </h6>
         """,
         unsafe_allow_html=True
     )
     
-# ====== Khởi tạo file bảng điểm ======
+# ====== Khởi tạo file bảng điểm (GIỮ NGUYÊN) ======
 def init_scores_file():
     if not os.path.exists(SCORES_FILE):
         pd.DataFrame(columns=EXPECTED_COLUMNS).to_excel(SCORES_FILE, index=False)
 init_scores_file()
 
-# ====== Các hàm tiện ích ======
+# ====== Các hàm tiện ích (GIỮ NGUYÊN load_quiz, load_quiz_from_word, save_quiz, get_shuffled_quiz) ======
 def load_quiz():
     if os.path.exists(QUIZ_FILE):
         with open(QUIZ_FILE, "r", encoding="utf-8") as f:
@@ -93,7 +93,7 @@ def get_shuffled_quiz(qz):
     return qz
 
 # =========================================================================
-# Hàm student_ui() 
+# Hàm student_ui() đã CẬP NHẬT để bắt học sinh nhấn nút Bắt đầu
 # =========================================================================
 def student_ui():
     st.header("📚 Khu vực Thi Trắc Nghiệm")
@@ -237,8 +237,7 @@ def student_ui():
                 if os.path.exists(SCORES_FILE):
                     df = pd.read_excel(SCORES_FILE)
                     if df.columns.tolist() != EXPECTED_COLUMNS:
-                        # Nếu cấu trúc file bị thay đổi (do lỗi), khởi tạo lại header
-                        df = pd.DataFrame(columns=EXPECTED_COLUMNS) 
+                        df = pd.DataFrame(columns=EXPECTED_COLUMNS)
                 else:
                     df = pd.DataFrame(columns=EXPECTED_COLUMNS)
                     
@@ -249,12 +248,10 @@ def student_ui():
                     "Tổng Số Câu": total,
                     "Thời Gian Nộp Bài": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 }
-                # Sử dụng pd.concat thay vì df.append
                 df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
                 df.to_excel(SCORES_FILE, index=False)
             except Exception as e:
-                # Bắt lỗi lưu file khi học sinh nộp bài
-                st.error(f"Lỗi khi lưu kết quả bài thi vào bảng điểm: {e}")
+                st.error(f"Lưu kết quả thất bại: {e}")
 
             st.session_state["quiz_submitted"] = True 
             st.session_state["doing_quiz"] = False
@@ -335,7 +332,7 @@ def student_ui():
         return 
         
 # =========================================================================
-# ====== Giao diện Giáo viên ======
+# ====== Giao diện Giáo viên (ĐÃ CHỈNH SỬA) ======
 # =========================================================================
 def admin_ui():
     
@@ -358,7 +355,7 @@ def admin_ui():
     if not st.session_state.get("admin_logged_in", False):
         if 'uploaded_quiz_data' in st.session_state: del st.session_state.uploaded_quiz_data
         
-    # (Đăng nhập/Đăng xuất)
+    # (Đăng nhập/Đăng xuất giữ nguyên)
     if not st.session_state.get("admin_logged_in", False):
         st.info("🔐 Đăng nhập để truy cập khu vực Giáo viên")
         pwd = st.text_input("Nhập mật khẩu:", type="password")
@@ -388,7 +385,7 @@ def admin_ui():
     st.subheader("2️⃣ Tải Đề Thi (Word)")
     up = st.file_uploader("📄 Chọn file .docx", type=["docx"])
     
-    # Logic xử lý file Word 
+    # Logic xử lý file Word (Giữ nguyên logic chính)
     if up:
         try:
             q = load_quiz_from_word(up)
@@ -405,12 +402,18 @@ def admin_ui():
             
     
     # --------------------------------------------------------
-    # CHỨC NĂNG CHỈNH SỬA ĐỀ THI VỚI ẢNH 
+    # CHỨC NĂNG CHỈNH SỬA ĐỀ THI VỚI ẢNH (BỔ SUNG NÚT ĐÓNG VÀ XỬ LÝ)
     # --------------------------------------------------------
     if 'uploaded_quiz_data' in st.session_state and st.session_state.uploaded_quiz_data:
         quiz_data = st.session_state.uploaded_quiz_data
         st.subheader(f"3️⃣ Chỉnh Sửa & Lưu Đề Thi ({len(quiz_data)} câu)")
         
+        # Bổ sung nút "Đóng khu vực chỉnh sửa (Không lưu)" và xử lý để đóng
+        if st.button("❌ Đóng khu vực chỉnh sửa (Không lưu)", key="close_edit_area"):
+            if 'uploaded_quiz_data' in st.session_state:
+                del st.session_state.uploaded_quiz_data # Xóa data khỏi session state
+                st.rerun() # Refresh giao diện để ẩn khu vực chỉnh sửa
+
         with st.form("edit_quiz_form"):
             
             # Khởi tạo một list mới để lưu dữ liệu đã chỉnh sửa
@@ -504,58 +507,36 @@ def admin_ui():
                 # Lưu đề thi vào file JSON
                 save_quiz(new_quiz_data)
                 
-                # Dọn dẹp session state sau khi lưu
+                # Dọn dẹp session state sau khi lưu (Đóng khu vực chỉnh sửa)
                 del st.session_state.uploaded_quiz_data
                 st.rerun()
             else:
                 st.error("⚠️ **Lỗi:** Có câu hỏi không hợp lệ (thiếu nội dung, thiếu lựa chọn, hoặc đáp án không khớp). Vui lòng kiểm tra lại.")
 
     # --------------------------------------------------------
-    # KHU VỰC BẢNG ĐIỂM (4) 
+    # KHU VỰC BẢNG ĐIỂM (4) và XÓA BẢNG ĐIỂM (5) - (GIỮ NGUYÊN)
     # --------------------------------------------------------
     st.subheader("4️⃣ Xem & Tải Bảng Điểm")
     
-    df = pd.DataFrame(columns=EXPECTED_COLUMNS) # Khởi tạo DataFrame rỗng mặc định
-    
-    # Thử đọc file Excel nếu nó tồn tại
-    if os.path.exists(SCORES_FILE):
+    if os.path.exists(SCORES_FILE) and os.path.getsize(SCORES_FILE) > 0:
         try:
-            # CHỈ ĐỌC FILE TỒN TẠI
             df = pd.read_excel(SCORES_FILE)
-            
-            # Kiểm tra cấu trúc cột
-            if df.columns.tolist() != EXPECTED_COLUMNS:
-                 # Nếu cấu trúc sai, gán lại DataFrame rỗng
-                 st.warning("⚠️ **Lỗi Cấu trúc:** Cấu trúc file bảng điểm bị thay đổi. Đang hiển thị dữ liệu trống.")
-                 df = pd.DataFrame(columns=EXPECTED_COLUMNS) 
-             
+            if not df.empty:
+                df["% Điểm (Thang 10)"] = round(df["Điểm"] / df["Tổng Số Câu"] * 10, 2)
+                st.dataframe(df, use_container_width=True)
+                out = BytesIO()
+                with pd.ExcelWriter(out, engine="xlsxwriter") as w:
+                    df.to_excel(w, index=False)
+                st.download_button("📥 Tải Bảng Điểm", out.getvalue(),
+                    file_name=f"BangDiem_{dt.date.today().strftime('%Y%m%d')}.xlsx",
+                    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+            else:
+                st.info("Chưa có kết quả nào.")
         except Exception as e:
-            # Bắt lỗi đọc file, bao gồm lỗi "Bad magic number"
-            st.error(f"❌ Lỗi khi đọc file bảng điểm: **{e}**")
-            st.warning("Hệ thống đã phát hiện file bảng điểm bị lỗi hoặc hỏng. Vui lòng **Xóa Dữ Liệu Bảng Điểm** (mục 5) để tạo lại file mới.")
-            # Dùng df rỗng đã khởi tạo ở trên để tránh lỗi tiếp theo
-            df = pd.DataFrame(columns=EXPECTED_COLUMNS) 
-
-    # Chỉ xử lý và hiển thị nếu DataFrame KHÔNG rỗng
-    if not df.empty:
-        df["% Điểm (Thang 10)"] = round(df["Điểm"] / df["Tổng Số Câu"] * 10, 2)
-        st.dataframe(df, use_container_width=True)
-        
-        # Tạo và hiển thị nút tải xuống
-        out = BytesIO()
-        try:
-            with pd.ExcelWriter(out, engine="xlsxwriter") as w:
-                df.to_excel(w, index=False)
-            st.download_button("📥 Tải Bảng Điểm", out.getvalue(),
-                file_name=f"BangDiem_{dt.date.today().strftime('%Y%m%d')}.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
-        except Exception as e:
-            # Bắt lỗi khi tạo file tải xuống (nếu có)
-            st.error(f"Lỗi khi tạo file tải xuống: {e}")
+            st.error(f"Lỗi khi đọc file bảng điểm hoặc tạo file tải xuống: {e}")
             
     else:
-        # Hiển thị thông báo khi df rỗng hoặc khi file chưa tồn tại
-        st.info("Chưa có kết quả nào.")
+        st.info("Chưa có file bảng điểm.")
         
     st.markdown("---")
     
@@ -567,14 +548,12 @@ def admin_ui():
         if st.button("❌ Vâng, XÓA BẢNG ĐIỂM VĨNH VIỄN", type="secondary"):
             delete_scores_file()
             
-# ====== Điều hướng chính (ĐÃ XÓA LOGO TRONG SIDEBAR) ======
+# ====== Điều hướng chính (GIỮ NGUYÊN) ======
 def main():
     if "mode" not in st.session_state:
         st.session_state.mode = "student"
         
     with st.sidebar:
-        # Logo trong sidebar đã được xóa theo yêu cầu
-            
         st.sidebar.markdown(
     """
     <h3 style='text-align: center; color: #444; font-weight: 800;'>
@@ -595,4 +574,9 @@ def main():
         admin_ui()
 
 if __name__ == "__main__":
+
     main()
+
+
+
+
