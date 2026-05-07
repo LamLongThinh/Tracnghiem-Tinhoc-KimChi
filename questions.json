@@ -1,0 +1,607 @@
+[
+    {
+        "question": "Em sẽ chọn đáp án nào dưới đây nếu có lời mời tuyển dụng làm việc trên mạng xã hội bằng cách nhấn like trên các trang quảng cáo sản phẩm?",
+        "options": [
+            "Chấp nhận ngay mà không cần biết gì",
+            "Chấp nhận và chia sẻ lời mời với các bạn của mình",
+            "Em tìm hiểu thông tin về nhóm kín đó rồi quyết định có tham gia hay không.",
+            "Từ chối không tham gia vì không rõ nguồn gốc thông tin tuyển dụng trên mạng xã hội, dễ bị lừa đảo làm việc vi phạm đạo đức và pháp luật."
+        ],
+        "answer": "Từ chối không tham gia vì không rõ nguồn gốc thông tin tuyển dụng trên mạng xã hội, dễ bị lừa đảo làm việc vi phạm đạo đức và pháp luật.",
+        "image_base64": null
+    },
+    {
+        "question": "Nếu các bạn em quay video các bạn trong lớp có hành vi bạo lực và đăng lên mạng xã hội, để cảnh báo các bạn em chọn hành động nào sau đây?",
+        "options": [
+            "Khuyên bạn nên sử dụng thông tin do mình tự tạo",
+            "Khuyên bạn không nên đăng video đó lên mạng xã hội.",
+            "Khuyên bạn chỉ chia sẻ những bạn trong nhóm",
+            "Cảnh báo bạn rằng đó là hành vi vi phạm pháp luật, đạo đức, hãy dừng ngay mọi hành vi chia sẻ và nên thông báo với giáo viên về hành vi của bạn đó."
+        ],
+        "answer": "Cảnh báo bạn rằng đó là hành vi vi phạm pháp luật, đạo đức, hãy dừng ngay mọi hành vi chia sẻ và nên thông báo với giáo viên về hành vi của bạn đó.",
+        "image_base64": null
+    },
+    {
+        "question": "Hình ảnh minh họa trong văn bản giúp:",
+        "options": [
+            "Văn bản đẹp và dễ hiểu hơn",
+            "Văn bản dài hơn",
+            "Giảm nội dung",
+            "Không có tác dụng"
+        ],
+        "answer": "Văn bản đẹp và dễ hiểu hơn",
+        "image_base64": null
+    },
+    {
+        "question": "Để văn bản nổi lên trên hình nền, ta dùng lệnh:",
+        "options": [
+            "Wrap Text → Behind Text",
+            "Layout Text",
+            "Wrap Text → In Front of Text",
+            "Insert Text"
+        ],
+        "answer": "Wrap Text → In Front of Text",
+        "image_base64": null
+    },
+    {
+        "question": "Vai trò chính của hình đồ họa trong văn bản là gì?",
+        "options": [
+            "Làm văn bản dài hơn",
+            "Giúp người đọc dễ hiểu nội dung hơn",
+            "Thay thế hoàn toàn văn bản",
+            "Chỉ dùng để trang trí"
+        ],
+        "answer": "Giúp người đọc dễ hiểu nội dung hơn",
+        "image_base64": null
+    },
+    {
+        "question": "Nhận định nào đúng về công cụ hình ảnh?",
+        "options": [
+            "Có thể thay đổi vị trí và kích thước",
+            "Chỉ chèn được 1 ảnh",
+            "Không thể chỉnh sửa sau khi chèn",
+            "Không thể xóa"
+        ],
+        "answer": "Có thể thay đổi vị trí và kích thước",
+        "image_base64": null
+    },
+    {
+        "question": "Phần mềm soạn thảo văn bản cung cấp mấy kiểu danh sách liệt kê?",
+        "options": [
+            "2",
+            "1",
+            "3",
+            "4"
+        ],
+        "answer": "2",
+        "image_base64": null
+    },
+    {
+        "question": "Danh sách nào sau đây có thứ tự?",
+        "options": [
+            "Danh sách hình ảnh",
+            "Danh sách dấu đầu dòng",
+            "Danh sách đánh số",
+            "Danh sách chữ cái"
+        ],
+        "answer": "Danh sách đánh số",
+        "image_base64": null
+    },
+    {
+        "question": "Đáp án nào dưới đây là địa chỉ tương đối?",
+        "options": [
+            "$B4",
+            "&B&5",
+            "$A$3",
+            "C3"
+        ],
+        "answer": "C3",
+        "image_base64": null
+    },
+    {
+        "question": "Khi có sao chép công thức Doanh thu của công ty = Doanh thu x Tỉ lệ, em nên sử dụng địa chỉ tuyệt đối cho giá trị nào?",
+        "options": [
+            "Tỉ lệ",
+            "Doanh thu của công ty",
+            "Doanh thu",
+            "Tỉ lệ và doanh thu"
+        ],
+        "answer": "Tỉ lệ",
+        "image_base64": null
+    },
+    {
+        "question": "Mỗi dòng trong danh sách liệt kê thường được tạo bằng cách nào?",
+        "options": [
+            "Nhấn Tab",
+            "Nhấn Enter",
+            "Nhấn Shift",
+            "Nhấn Ctrl"
+        ],
+        "answer": "Nhấn Enter",
+        "image_base64": null
+    },
+    {
+        "question": "Khi thêm dòng mới trong danh sách, dấu đầu dòng sẽ:",
+        "options": [
+            "Mất đi",
+            "Tự động tạo",
+            "Phải nhập lại",
+            "Không thay đổi"
+        ],
+        "answer": "Tự động tạo",
+        "image_base64": null
+    },
+    {
+        "question": "Danh sách dạng liệt kê chia nhỏ các đoạn văn bản dài có tác dụng gì?",
+        "options": [
+            "Giúp sử dụng danh sách dạng liệt kê",
+            "Giúp người đọc có khả năng tham khảo thông tin nhanh chóng, dễ dàng",
+            "Giúp xóa bỏ những đoạn văn bản dài",
+            "Giúp lọc thông tin cần thiết"
+        ],
+        "answer": "Giúp người đọc có khả năng tham khảo thông tin nhanh chóng, dễ dàng",
+        "image_base64": null
+    },
+    {
+        "question": "Với danh sách có hàng trăm mục thì làm thế nào để tiết kiệm thời gian nhập và không bị nhầm thứ tự các mục?",
+        "options": [
+            "Nhập từng số thứ tự của danh sách",
+            "Tạo danh sách dạng liệt kê dạng danh sách có thứ tự bằng lệnh Numbering",
+            "Nhập từng số cho danh sách",
+            "Nhập danh sách dạng liệt kê dạng danh sách có thứ tự bằng thủ công"
+        ],
+        "answer": "Tạo danh sách dạng liệt kê dạng danh sách có thứ tự bằng lệnh Numbering",
+        "image_base64": null
+    },
+    {
+        "question": "Công cụ chèn hình ảnh vào văn bản nằm ở thẻ nào?",
+        "options": [
+            "Home",
+            "Insert",
+            "Design",
+            "Review"
+        ],
+        "answer": "Insert",
+        "image_base64": null
+    },
+    {
+        "question": "Danh sách dấu đầu dòng có đặc điểm gì?",
+        "options": [
+            "Không có thứ tự",
+            "Có thứ tự rõ ràng",
+            "Chỉ dùng số",
+            "Chỉ dùng chữ"
+        ],
+        "answer": "Không có thứ tự",
+        "image_base64": null
+    },
+    {
+        "question": "Nút tạo danh sách có thứ tự trong Word là:",
+        "options": [
+            "Bullets",
+            "Insert",
+            "Numbering",
+            "Layout"
+        ],
+        "answer": "Numbering",
+        "image_base64": null
+    },
+    {
+        "question": "Mỗi đơn vị trong danh sách dạng liệt kê là?",
+        "options": [
+            "Một đoạn văn bản",
+            "Một dãy số",
+            "Một văn bản",
+            "Một kí tự"
+        ],
+        "answer": "Một đoạn văn bản",
+        "image_base64": null
+    },
+    {
+        "question": "Chức năng chính của đầu trang và chân trang là gì?",
+        "options": [
+            "Trang trí văn bản",
+            "Chứa thông tin chính của bài",
+            "Thay thế nội dung văn bản",
+            "Cung cấp thông tin ngắn gọn, hỗ trợ quản lý văn bản"
+        ],
+        "answer": "Cung cấp thông tin ngắn gọn, hỗ trợ quản lý văn bản",
+        "image_base64": null
+    },
+    {
+        "question": "Thông tin trong đầu trang và chân trang có đặc điểm gì?",
+        "options": [
+            "Chỉ xuất hiện ở trang đầu",
+            "Phải nhập lại ở từng trang",
+            "Chỉ xuất hiện ở trang cuối",
+            "Tự động xuất hiện ở tất cả các trang"
+        ],
+        "answer": "Tự động xuất hiện ở tất cả các trang",
+        "image_base64": null
+    },
+    {
+        "question": "Nội dung nào KHÔNG thường có trong đầu trang/chân trang, trong các nội dung sau?",
+        "options": [
+            "Số trang",
+            "Tên tài liệu",
+            "Nội dung chính của bài văn",
+            "Tên tác giả"
+        ],
+        "answer": "Nội dung chính của bài văn",
+        "image_base64": null
+    },
+    {
+        "question": "Em chọn lệnh nào sau đây để lưu tệp văn bản?",
+        "options": [
+            "File/Open",
+            "File/Exit",
+            "File/Save",
+            "File/New"
+        ],
+        "answer": "File/Save",
+        "image_base64": null
+    },
+    {
+        "question": "Trong phần mềm soạn thảo em chọn lệnh nào để thêm hình ảnh minh họa?",
+        "options": [
+            "Home/Pictures",
+            "Draw/Pictures",
+            "Insert/Pictures",
+            "Insert/Shapes"
+        ],
+        "answer": "Insert/Pictures",
+        "image_base64": null
+    },
+    {
+        "question": "Trong soạn thảo văn bản khi chèn ảnh, để ảnh nền nằm dưới văn bản em chọn thao tác nào dưới đây?",
+        "options": [
+            "Chọn ảnh/Format/Arrange/Wrap Text/Behind Text",
+            "Chọn ảnh/Format/Arrange/Wrap Text/In Front of Text",
+            "Chọn ảnh/Format/Arrange/Wrap Text/Tight",
+            "Chọn văn bản/Format/Arrange/Wrap Text/Behind Text"
+        ],
+        "answer": "Chọn ảnh/Format/Arrange/Wrap Text/Behind Text",
+        "image_base64": null
+    },
+    {
+        "question": "Em chọn lệnh nào sau đây để thêm các đối tượng hình đồ họa?",
+        "options": [
+            "Draw/Pictures",
+            "Chọn Insert/Pictures",
+            "Chọn Home/chọn biểu tượng Shapes",
+            "Chọn Insert/chọn biểu tượng Shapes"
+        ],
+        "answer": "Chọn Insert/chọn biểu tượng Shapes",
+        "image_base64": null
+    },
+    {
+        "question": "Lệnh: “chọn đối tượng đồ họa/Format/Shape Styles/Shape Fill” dùng để làm gì?",
+        "options": [
+            "Thêm đối tượng đồ họa",
+            "Thay đổi kích thước cho đối tượng đồ họa",
+            "Để đổi màu cho đối tượng đồ họa",
+            "Chỉnh vị trí cho đối tượng đồ họa"
+        ],
+        "answer": "Để đổi màu cho đối tượng đồ họa",
+        "image_base64": null
+    },
+    {
+        "question": "Trong hộp thoại Header and Footer, lệnh Footer có tác dụng gì?",
+        "options": [
+            "Tự động cập nhật ngày hiển thị",
+            "Thêm đầu trang",
+            "Chọn để thêm thông tin vào chân trang",
+            "Đánh số trang"
+        ],
+        "answer": "Chọn để thêm thông tin vào chân trang",
+        "image_base64": null
+    },
+    {
+        "question": "Trong phần mềm trình chiếu, thông tin nào dưới đây thường được sử dụng để thêm vào đầu trang, chân trang?",
+        "options": [
+            "Tiêu đề bài trình chiếu, tên người trình chiếu",
+            "Tiêu đề bài trình chiếu",
+            "Những nội dung cần trình bày",
+            "Các kí tự đặc biệt"
+        ],
+        "answer": "Tiêu đề bài trình chiếu, tên người trình chiếu",
+        "image_base64": null
+    },
+    {
+        "question": "Hành động luôn trung thực khi tạo sản phẩm số được hiểu là gì?",
+        "options": [
+            "Không sử dụng thông tin giả, thông tin không đáng tin cậy",
+            "Chỉnh sửa thông tin của người khác coi là của mình",
+            "Sản phẩm là thông tin của người khác chưa xin phép",
+            "Không ghi chú tác giả"
+        ],
+        "answer": "Không sử dụng thông tin giả, thông tin không đáng tin cậy",
+        "image_base64": null
+    },
+    {
+        "question": "Đâu là đặc điểm của địa chỉ tuyệt đối?",
+        "options": [
+            "Thay đổi khi sao chép công thức",
+            "Tự động thay đổi khi sao chép công thức",
+            "Giữ nguyên vị trí tương đối giữa ô chứa công thức và ô có địa chỉ trong công thức",
+            "Không thay đổi khi sao chép công thức"
+        ],
+        "answer": "Không thay đổi khi sao chép công thức",
+        "image_base64": null
+    },
+    {
+        "question": "Hành vi nào sau đây vi phạm khi sử dụng công nghệ kĩ thuật số?",
+        "options": [
+            "Đưa lên mạng thông tin cá nhân của cá nhân mình",
+            "Đưa lên mạng thông tin cá nhân của người khác mà chưa được phép.",
+            "Sao chép thông tin của cá nhân mình từ một trang web",
+            "Sử dụng phần mềm đã có bản quyền được chia sẻ từ chủ sở hữu"
+        ],
+        "answer": "Đưa lên mạng thông tin cá nhân của người khác mà chưa được phép.",
+        "image_base64": null
+    },
+    {
+        "question": "Trong bảng tính, chức năng của phím F4 có tác dụng nào dưới đây?",
+        "options": [
+            "Để lưu tệp",
+            "Chuyển địa chỉ tương đối thành địa chỉ tuyệt đối",
+            "Để mở tệp mới",
+            "Chuyển địa chỉ tuyệt đối thành địa chỉ tương đối"
+        ],
+        "answer": "Chuyển địa chỉ tương đối thành địa chỉ tuyệt đối",
+        "image_base64": null
+    },
+    {
+        "question": "Địa chỉ tuyệt đối được ký hiệu bằng dấu gì?",
+        "options": [
+            "& trước tên cột và trước tên hàng",
+            "$ trước tên cột và trước tên hàng",
+            "# trước tên cột",
+            "& trước tên hàng"
+        ],
+        "answer": "$ trước tên cột và trước tên hàng",
+        "image_base64": null
+    },
+    {
+        "question": "Lệnh Add Level trong hộp thoại Sort dùng để làm gì?",
+        "options": [
+            "Lọc dữ liệu",
+            "Xóa bỏ tiêu chí sắp xếp",
+            "Thêm nhiều tiêu chí sắp xếp",
+            "Thêm hàng hoặc cột"
+        ],
+        "answer": "Thêm nhiều tiêu chí sắp xếp",
+        "image_base64": null
+    },
+    {
+        "question": "Lệnh Lọc dữ liệu nằm trong thẻ nào?",
+        "options": [
+            "Home",
+            "Data",
+            "Insert",
+            "Formulas"
+        ],
+        "answer": "Data",
+        "image_base64": null
+    },
+    {
+        "question": "Việc sắp xếp tên học sinh theo bảng chữ cái là sắp xếp theo kiểu gì?",
+        "options": [
+            "Z -> A",
+            "A -> Z",
+            "Smallest to Largest",
+            "Largest to Small"
+        ],
+        "answer": "A -> Z",
+        "image_base64": null
+    },
+    {
+        "question": "Công thức tại ô A4 là = A3 + $C$2. Khi sao chép xuống ô A5, công thức trở thành lựa chọn nào dưới đây?",
+        "options": [
+            "A5 = A4 + $C$2",
+            "A5 = A4 + C2",
+            "A5 = A3 + $D$2",
+            "A5 = A3 + $C$2"
+        ],
+        "answer": "A5 = A4 + $C$2",
+        "image_base64": null
+    },
+    {
+        "question": "Khi sao chép công thức từ ô B4 = C4*D4 sang ô D5, công thức tại ô D5 trở thành lựa chọn nào dưới đây?",
+        "options": [
+            "= E5*F5",
+            "=C5*F4",
+            "=E4*F4",
+            "= C4*D5"
+        ],
+        "answer": "= E5*F5",
+        "image_base64": null
+    },
+    {
+        "question": "Muốn xóa tiêu chí sắp xếp đã thiết lập, cần chọn lệnh nào?",
+        "options": [
+            "Copy Level",
+            "Add Level",
+            "Delete Level",
+            "My data has headers"
+        ],
+        "answer": "Delete Level",
+        "image_base64": null
+    },
+    {
+        "question": "Trong bảng tính, nếu sau khi sao chép công thức mà địa chỉ ô thay đổi, đó là loại địa chỉ gì?",
+        "options": [
+            "Địa chỉ tuyệt đối",
+            "Địa chỉ tương đối",
+            "Địa chỉ vùng dữ liệu",
+            "Địa chỉ không thay đổi"
+        ],
+        "answer": "Địa chỉ tương đối",
+        "image_base64": null
+    },
+    {
+        "question": "Trong các phương án sau, đâu là phương án không đúng?",
+        "options": [
+            "Có thể sử dụng kết hợp danh sách đầu đầu dòng và danh sách có thứ tự",
+            "Danh sách dạng liệt kê tự động cập nhật khi thêm hoặc bớt đoạn văn",
+            "Phần mềm soạn thảo văn bản cung cấp hai kiểu danh sách dạng liệt kê",
+            "Chỉ có thể sử dụng một kiểu danh sách dạng liệt kê cho một văn bản"
+        ],
+        "answer": "Chỉ có thể sử dụng một kiểu danh sách dạng liệt kê cho một văn bản",
+        "image_base64": null
+    },
+    {
+        "question": "Dạng liệt kê giúp chia nhỏ văn bản dài nhằm mục đích gì?",
+        "options": [
+            "Tham khảo thông tin một cách đa dạng",
+            "Tham khảo thông tin chính xác",
+            "Tham khảo thông tin nhanh chóng, dễ dàng",
+            "Không tự động cập nhật"
+        ],
+        "answer": "Tham khảo thông tin nhanh chóng, dễ dàng",
+        "image_base64": null
+    },
+    {
+        "question": "Công cụ xử lý hình ảnh có tác dụng gì?",
+        "options": [
+            "Nâng cao hình thức biểu đạt",
+            "Nâng cao số lượng sử dụng hình ảnh",
+            "Số lượng sử dụng hình ảnh trở nên hạn chế",
+            "Nâng cao hiệu quả sử dụng hình ảnh"
+        ],
+        "answer": "Nâng cao hiệu quả sử dụng hình ảnh",
+        "image_base64": null
+    },
+    {
+        "question": "Trong danh sách dấu đầu dòng, mỗi mục thường bắt đầu bằng gì?",
+        "options": [
+            "Bằng một dấu đầu dòng",
+            "Bằng nội dung văn bản",
+            "Bằng số thứ tự",
+            "Bằng thông tin ngắn gọn"
+        ],
+        "answer": "Bằng một dấu đầu dòng",
+        "image_base64": null
+    },
+    {
+        "question": "Trong các phương án sau, đâu là phương án sai?",
+        "options": [
+            "Không thể vẽ hình đồ hoạ trong phần mềm soạn thảo văn bản",
+            "Có thể thay đổi kích thước của hình ảnh và hình đồ hoạ trong văn bản",
+            "Có thể vẽ hình đồ hoạ trong phần mềm soạn thảo văn bản",
+            "Có thể chèn hình ảnh vào văn bản để minh hoạ cho nội dung"
+        ],
+        "answer": "Không thể vẽ hình đồ hoạ trong phần mềm soạn thảo văn bản",
+        "image_base64": null
+    },
+    {
+        "question": "Trong soạn thảo văn bản, để tạo nhanh danh sách dài nhiều mục, nên chọn cách nào?",
+        "options": [
+            "Nhập từng số thứ tự của danh sách",
+            "Gạch đầu dòng",
+            "Nhập thủ công các danh mục theo thứ tự",
+            "Sử dụng công cụ tạo tự động danh sách dạng liệt kê"
+        ],
+        "answer": "Sử dụng công cụ tạo tự động danh sách dạng liệt kê",
+        "image_base64": null
+    },
+    {
+        "question": "Danh sách được đánh số tự động thuộc loại danh sách nào?",
+        "options": [
+            "Danh sách có thứ tự đầu dòng",
+            "Danh sách bắt đầu bằng số",
+            "Danh sách dấu đầu dòng",
+            "Danh sách không liệt kê"
+        ],
+        "answer": "Danh sách có thứ tự đầu dòng",
+        "image_base64": null
+    },
+    {
+        "question": "Để chèn số trang ở giữa phần chân trang, cần chọn lệnh nào?",
+        "options": [
+            "Blank",
+            "Footer",
+            "Bottom of Page/ Plain Number 2",
+            "Header"
+        ],
+        "answer": "Bottom of Page/ Plain Number 2",
+        "image_base64": null
+    },
+    {
+        "question": "Để hoàn tất việc chèn số trang, đầu trang và chân trang, cần chọn lệnh gì?",
+        "options": [
+            "Close Header & Footer",
+            "Footer",
+            "Bottom of Page/ Plain Number 2",
+            "Header"
+        ],
+        "answer": "Close Header & Footer",
+        "image_base64": null
+    },
+    {
+        "question": "Trong các phương án sau, phương án nào đúng?",
+        "options": [
+            "Thông tin ở phần đầu trang và chân trang sẽ tự động xuất hiện ở tất cả các trang",
+            "Đầu trang và chân trang là đoạn văn bản đầu tiên và cuối cùng trong một trang",
+            "Đầu trang và chân trang là nội dung chính của một trang nằm ở giữa trang",
+            "Thông tin ở phần đầu trang và chân trang sẽ không tự động xuất hiện ở tất cả các trang"
+        ],
+        "answer": "Thông tin ở phần đầu trang và chân trang sẽ tự động xuất hiện ở tất cả các trang",
+        "image_base64": null
+    },
+    {
+        "question": "Phần mềm soạn thảo văn bản có chức năng nào sau đây?",
+        "options": [
+            "Tạo bảng tính phục vụ tính toán",
+            "Trình chiếu tự động cho văn bản",
+            "Đánh số trang tự động cho văn bản",
+            "Tạo album ảnh chuyên nghiệp"
+        ],
+        "answer": "Đánh số trang tự động cho văn bản",
+        "image_base64": null
+    },
+    {
+        "question": "Thao tác nào dùng để thêm chân trang vào văn bản?",
+        "options": [
+            "Home/Page Number",
+            "Insert/Header",
+            "Insert/Page Number",
+            "Insert/Footer"
+        ],
+        "answer": "Insert/Footer",
+        "image_base64": null
+    },
+    {
+        "question": "Thao tác nào dùng để thêm đầu trang vào văn bản?",
+        "options": [
+            "Insert/Header",
+            "Home/Page Number",
+            "Insert/Page Number",
+            "Insert/Footer"
+        ],
+        "answer": "Insert/Header",
+        "image_base64": null
+    },
+    {
+        "question": "Hãy chọn đáp án đúng để điền vào chỗ trống.",
+        "options": [
+            "chỉ để đánh số trang",
+            "chứa nội dung chính",
+            "kiểm soát các trang",
+            "không tự động xuất hiện khi tạo trang"
+        ],
+        "answer": "kiểm soát các trang",
+        "image_base64": null
+    },
+    {
+        "question": "Thao tác nào dùng để đánh số trang trong văn bản?",
+        "options": [
+            "Insert/Header",
+            "Insert/Page Number",
+            "Home/Page Number",
+            "Insert/Footer"
+        ],
+        "answer": "Insert/Page Number",
+        "image_base64": null
+    }
+]
