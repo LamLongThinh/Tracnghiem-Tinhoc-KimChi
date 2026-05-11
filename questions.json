@@ -513,7 +513,7 @@
             "Danh sách dấu đầu dòng",
             "Danh sách không liệt kê"
         ],
-        "answer": "Danh sách có thứ tự đầu dòng",
+        "answer": "Danh sách bắt đầu bằng số",
         "image_base64": null
     },
     {
