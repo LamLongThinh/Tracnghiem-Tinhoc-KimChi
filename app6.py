@@ -39,7 +39,7 @@ with col2:
             📝TRẮC NGHIỆM – TIN HỌC 8
         </h2>
         <h6 style='text-align: center; color: gray; font-weight: 700; margin-top: -10px;'> 
-    KIẾN THỨC TRỌNG TÂM CUỐI HỌC KÌ 2 NĂM HỌC 2025–2026
+    KIẾN THỨC TRỌNG TÂM GIỮA HK 1 NH 2026 - 2027
         </h6>
         """,
         unsafe_allow_html=True
