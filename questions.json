@@ -438,16 +438,5 @@
     ],
     "answer": "Thông tin số dễ dàng nhân bản và lan truyền nhưng khó bị xóa bỏ hoàn toàn.",
     "image_base64": null
-  },
-  {
-    "question": "Quyền tác giả của thông tin số được điều chỉnh và bảo vệ bởi yếu tố nào?",
-    "options": [
-      "Quy định của nhà mạng Internet.",
-      "Pháp luật bảo hộ.",
-      "Ý kiến của cộng đồng người dùng mạng xã hội.",
-      "Quyết định của người sử dụng máy tính."
-    ],
-    "answer": "Pháp luật bảo hộ.",
-    "image_base64": null
   }
 ]
