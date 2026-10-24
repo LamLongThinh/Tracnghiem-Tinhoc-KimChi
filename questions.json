@@ -306,5 +306,148 @@
     ],
     "answer": "Dàn ý -> Nội dung chi tiết các mục -> Kết luận -> Tài liệu tham khảo.",
     "image_base64": null
+  },
+  {
+    "question": "Linh kiện điện tử chính được sử dụng trong thế hệ máy tính điện tử thứ nhất (1945 – 1955) là gì?",
+    "options": [
+      "Bóng bán dẫn (transistor).",
+      "Đèn điện tử chân không.",
+      "Mạch tích hợp (IC).",
+      "Mạch tích hợp cỡ rất lớn (VLSI)."
+    ],
+    "answer": "Đèn điện tử chân không.",
+    "image_base64": null
+  },
+  {
+    "question": "Chiếc máy tính điện tử thế hệ thứ hai mang tên MINSK 22 (sản xuất tại Belarus) được đưa vào sử dụng ở Việt Nam vào năm nào?",
+    "options": [
+      "Năm 1945.",
+      "Năm 1967.",
+      "Năm 1968.",
+      "Năm 1975."
+    ],
+    "answer": "Năm 1968.",
+    "image_base64": null
+  },
+  {
+    "question": "Bộ vi xử lý (CPU) nguyên khối chứa hàng chục nghìn đến hàng triệu linh kiện bán dẫn bắt đầu xuất hiện ở thế hệ máy tính nào?",
+    "options": [
+      "Thế hệ thứ hai.",
+      "Thế hệ thứ ba.",
+      "Thế hệ thứ tư.",
+      "Thế hệ thứ năm."
+    ],
+    "answer": "Thế hệ thứ tư.",
+    "image_base64": null
+  },
+  {
+    "question": "Đặc điểm nổi bật nhất của máy tính điện tử thế hệ thứ năm (1990 – nay) là gì?",
+    "options": [
+      "Sử dụng bộ nhớ trống từ và thẻ đục lỗ.",
+      "Kích thước khổng lồ chiếm cả căn phòng.",
+      "Phát triển mạnh mẽ Trí tuệ nhân tạo (AI) giúp máy tính có khả năng cảm nhận, suy luận, tương tác.",
+      "Hoạt động hoàn toàn bằng hệ thống cơ khí bánh răng."
+    ],
+    "answer": "Phát triển mạnh mẽ Trí tuệ nhân tạo (AI) giúp máy tính có khả năng cảm nhận, suy luận, tương tác.",
+    "image_base64": null
+  },
+  {
+    "question": "Chiếc máy tính cơ khí Pascaline do Blaise Pascal sáng chế năm 1642 hoạt động dựa trên nguyên lý nào?",
+    "options": [
+      "Hệ thống rơ le điện tử.",
+      "Hệ thống bánh răng cơ khí.",
+      "Đèn điện tử chân không.",
+      "Công nghệ mạch tích hợp IC."
+    ],
+    "answer": "Hệ thống bánh răng cơ khí.",
+    "image_base64": null
+  },
+  {
+    "question": "Nhà toán học John Von Neumann đã đóng góp nguyên lý hoạt động nền tảng nào cho máy tính hiện đại vào năm 1945?",
+    "options": [
+      "Phát minh ra bàn tính số học.",
+      "Khái niệm chương trình được lưu trữ.",
+      "Sáng chế ra bóng bán dẫn.",
+      "Tạo ra máy dệt đục lỗ tự động."
+    ],
+    "answer": "Khái niệm chương trình được lưu trữ.",
+    "image_base64": null
+  },
+  {
+    "question": "Từ \"chữ số\" (digit) trong tiếng Anh bắt nguồn từ \"digitus\" trong tiếng Latin có nghĩa là gì?",
+    "options": [
+      "Bánh răng.",
+      "Thước tính.",
+      "Ngón tay.",
+      "Bàn tính."
+    ],
+    "answer": "Ngón tay.",
+    "image_base64": null
+  },
+  {
+    "question": "Máy tính và công nghệ thông tin đã tác động làm thay đổi lĩnh vực Y tế của xã hội loài người như thế nào?",
+    "options": [
+      "Giải quyết quá tải trong khám chữa bệnh.",
+      "Tăng cường quốc phòng, an toàn xã hội.",
+      "Giúp phương tiện giao thông được lưu thông",
+      "Tạo ra nhiều sản phẩm số phục vụ giải trí"
+    ],
+    "answer": "Giải quyết quá tải trong khám chữa bệnh.",
+    "image_base64": null
+  },
+  {
+    "question": "Trong lĩnh vực Y tế, ví dụ nào sau đây thể hiện rõ sự thay đổi lớn lao nhờ ứng dụng thiết bị số hiện đại?",
+    "options": [
+      "Thiết bị đeo thông minh (đồng hồ thông minh) theo dõi sức khỏe thường xuyên, tự động cảnh báo bất thường đến cơ sở y tế.",
+      "Việc kê đơn thuốc bằng bút máy và sổ giấy truyền thống.",
+      "Việc lưu trữ hồ sơ bệnh án hoàn toàn bằng tủ tài liệu giấy.",
+      "Việc đo nhịp tim bằng cách bắt mạch thủ công."
+    ],
+    "answer": "Thiết bị đeo thông minh (đồng hồ thông minh) theo dõi sức khỏe thường xuyên, tự động cảnh báo bất thường đến cơ sở y tế.",
+    "image_base64": null
+  },
+  {
+    "question": "Ứng dụng nào sau đây thể hiện sự đóng góp của công nghệ máy tính trong lĩnh vực An toàn xã hội?",
+    "options": [
+      "Hệ thống camera giám sát công cộng giúp phát hiện vi phạm pháp luật và giữ gìn trật tự.",
+      "Việc ghi chép sổ nhật ký an ninh phường/xã bằng tay.",
+      "Sử dụng loa phát thanh cầm tay ở ngã tư.",
+      "Việc lực lượng chức năng đi tuần tra không sử dụng thiết bị liên lạc."
+    ],
+    "answer": "Hệ thống camera giám sát công cộng giúp phát hiện vi phạm pháp luật và giữ gìn trật tự.",
+    "image_base64": null
+  },
+  {
+    "question": "Thông tin số là gì?",
+    "options": [
+      "Thông tin được in trực tiếp trên giấy báo.",
+      "Các tín hiệu hình ảnh tự nhiên chưa qua xử lý.",
+      "Thông tin truyền miệng giữa con người với con người.",
+      "Thông tin được mã hóa thành dãy bit để chuyển vào các thiết bị kỹ thuật số và lan truyền trên môi trường số."
+    ],
+    "answer": "Thông tin được mã hóa thành dãy bit để chuyển vào các thiết bị kỹ thuật số và lan truyền trên môi trường số.",
+    "image_base64": null
+  },
+  {
+    "question": "Phát biểu nào sau đây ĐÚNG về đặc điểm của thông tin số?",
+    "options": [
+      "Thông tin số rất khó sao chép nhưng cực kỳ dễ xóa bỏ hoàn toàn.",
+      "Mọi thông tin số trên Internet đều có độ tin cậy tuyệt đối 100%.",
+      "Thông tin số chỉ được lưu trữ bởi các cơ quan nhà nước, cá nhân không thể lưu trữ.",
+      "Thông tin số dễ dàng nhân bản và lan truyền nhưng khó bị xóa bỏ hoàn toàn."
+    ],
+    "answer": "Thông tin số dễ dàng nhân bản và lan truyền nhưng khó bị xóa bỏ hoàn toàn.",
+    "image_base64": null
+  },
+  {
+    "question": "Quyền tác giả của thông tin số được điều chỉnh và bảo vệ bởi yếu tố nào?",
+    "options": [
+      "Quy định của nhà mạng Internet.",
+      "Pháp luật bảo hộ.",
+      "Ý kiến của cộng đồng người dùng mạng xã hội.",
+      "Quyết định của người sử dụng máy tính."
+    ],
+    "answer": "Pháp luật bảo hộ.",
+    "image_base64": null
   }
 ]
